@@ -15,8 +15,8 @@
     <header class="site-header">
         <div class="container">
             <nav class="navigation">
-                <a href="index.html" class="logo">
-                    <img src="images/WebStudio.svg" alt="Логотип">
+                <a href="index.html" class="logo-link">
+                    <img class="logo" src="images/WebStudio.svg" alt="Логотип">
                 </a>
                 <ul class="list">
                     <li class="item"><a class="current link" href="index.html">Студия</a></li>
@@ -24,6 +24,11 @@
                     <li class="item"><a class="link" href="">Контакты</a></li>
                 </ul>
             </nav>
+            <button class="burger-btn" type="button" data-menu-button>
+                <svg class="burger-icon">
+                    <use href="./images/sprite.svg#icon-burger"></use>
+                </svg>
+            </button>
             <ul class="header-contacts list">
                 <li class="item">
                     <a class="link" href="mailto:info@devstudio.com">
@@ -41,13 +46,43 @@
                 </li>
             </ul>
         </div>
+        <div class="burger-menu" data-menu>
+            <ul class="burger-menu-navigation list">
+                <li class="item"><a class="current link" href="index.html">Студия</a></li>
+                <li class="item"><a class="link" href="./portfolio.html">Портфолио</a></li>
+                <li class="item"><a class="link" href="">Контакты</a></li>
+            </ul>
+            <ul class="burger-menu-contacts list">
+                <li class="tel">
+                    <a class="link" href="tel:380961111111">
+                        +38 096 111 11 11
+                    </a>
+                </li>
+                <li class="mail">
+                    <a class="link" href="mailto:info@devstudio.com">
+                        info@devstudio.com
+                    </a>
+                </li>
+            </ul>
+            <ul class="burger-menu-social list">
+                <li class="item"><a class="link" href="">Instagram</a></li>
+                <li class="item"><a class="link" href="">Facebook</a></li>
+                <li class="item"><a class="link" href="">Twitter</a></li>
+                <li class="item"><a class="link" href="">LinkedIn</a></li>
+            </ul>
+            <button class="close" data-menu-close>
+                <svg class="icon">
+                    <use href="./images/sprite.svg#icon-burger-close"></use>
+                </svg>
+            </button>
+        </div>
     </header>
     <main>
-        <section class="hero">
+        <!-- <section class="hero">
             <h1 class="hero__header">Эффективные решения <br> для вашего бизнеса</h1>
             <button class="hero__button" data-modal-open>Заказать услугу</button>
-        </section>
-        <section class="advantages">
+        </section> -->
+        <!-- <section class="advantages">
            <div class="container">
             <ul class="list">
                 <li class="item">
@@ -72,8 +107,8 @@
                 </li>
             </ul>
            </div>
-        </section>
-        <section class="activities">
+        </section> -->
+        <!-- <section class="activities">
             <h2 class="section-header">Чем мы занимаемся</h2>
             <div class="container">
                 <ul class="list">
@@ -97,8 +132,8 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <section class="team">
+        </section> -->
+        <!-- <section class="team">
             <h2 class="section-header">Наша команда</h2>
             <div class="container">
                 <ul class="list">
@@ -252,8 +287,8 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <section class="clients">
+        </section> -->
+        <!-- <section class="clients">
             <h2 class="section-header">Постоянные клиенты</h2>
             
                 <ul class="clients-links list container">
@@ -301,8 +336,8 @@
                     </li>
                 </ul>
         
-        </section>
-        <div data-modal class="backdrop is-hidden">
+        </section> -->
+        <!-- <div data-modal class="backdrop is-hidden">
             <div class="modal">
                 <button data-modal-close class="close">
                     <svg class="icon close__icon">
@@ -356,10 +391,11 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div> -->
         <script src="./js/modal.js"></script>
+        <script src="./js/burger-menu.js"></script>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer-section address-section">
                 <a href="index.html" class="logo">
@@ -419,7 +455,8 @@
                 </form>
             </div>
         </div>
-    </footer>  
+    </footer>   -->
 </body>
 </html>
+
 

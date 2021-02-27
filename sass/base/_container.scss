@@ -1,13 +1,43 @@
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  display: flex;
-  text-align: center;
+  width: 100%;
+  padding: 0 15px;
 
-  .portfolio-section & {
-    flex-direction: column;
+  .site-header & {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 }
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+// .container {
+//   width: 1200px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   margin: 0 auto;
+//   display: flex;
+//   text-align: center;
+
+//   .portfolio-section & {
+//     flex-direction: column;
+//     align-items: center;
+//   }
+// }
