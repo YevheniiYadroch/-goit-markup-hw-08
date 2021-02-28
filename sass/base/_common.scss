@@ -8,13 +8,18 @@ body {
   font-style: normal;
   margin: 0;
   padding: 0;
-
-  .team & {
-    display: flex;
-  }
 }
 
 .link {
   text-decoration: none;
   color: inherit;
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    .team & {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 }

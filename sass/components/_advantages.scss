@@ -1,12 +1,13 @@
 .advantages {
-  padding-top: 94px;
+  padding: 60px 0;
+  text-align: center;
 
   .icon {
     background-color: var(--secondary-background);
     background-repeat: no-repeat;
     background-position: center;
     height: 120px;
-    width: 270px;
+    width: auto;
   }
 
   .antenna {
@@ -25,15 +26,8 @@
     background-image: url(../images/astronaut.svg);
   }
 
-  .list {
-    display: flex;
-  }
-
-  .item:not(:last-child) {
-    margin-right: 30px;
-  }
-
   &__title {
+    display: inline-block;
     margin: 30px 0 0;
 
     color: var(--primary-text-color);
@@ -45,6 +39,7 @@
     text-transform: uppercase;
     text-align: left;
   }
+
   &__description {
     margin: 10px 0 0;
 
@@ -55,5 +50,61 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantages {
+    .item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    text-align: left;
+
+    .list {
+      display: flex;
+    }
+
+    @media screen and (max-width: 1199px) {
+      .advantages {
+        .item:nth-child(-n + 2) {
+          margin-bottom: 30px;
+        }
+      }
+
+      .list {
+        flex-wrap: wrap;
+      }
+
+      .icon {
+        width: 354px;
+      }
+
+      &__title {
+        max-width: 354px;
+      }
+
+      &__description {
+        max-width: 354px;
+      }
+
+      .item:nth-child(odd) {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding: 94px 0;
+
+    .item:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }

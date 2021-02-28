@@ -241,3 +241,18 @@
     fill: currentColor;
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 94%;
+    max-width: 450px;
+    height: 90%;
+    max-height: 609px;
+    padding: 40px;
+    overflow: scroll;
+  }
+  .label-policy {
+    font-size: 12px;
+    line-height: 1.66;
+  }
+}
