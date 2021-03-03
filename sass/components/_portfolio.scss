@@ -158,6 +158,8 @@
     }
 
     &__item {
+      width: 370px;
+
       &:not(:nth-child(3n)) {
         margin-right: 30px;
       }

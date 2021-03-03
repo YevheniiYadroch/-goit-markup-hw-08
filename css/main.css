@@ -1393,6 +1393,9 @@ body {
     width: 370px;
     height: 294px;
   }
+  .portfolio__item {
+    width: 370px;
+  }
   .portfolio__item:not(:nth-child(3n)) {
     margin-right: 30px;
   }
