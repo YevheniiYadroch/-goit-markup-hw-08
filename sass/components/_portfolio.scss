@@ -71,7 +71,7 @@
 .thumb {
   position: relative;
   overflow: hidden;
-  height: 294px;
+  max-height: 294px;
 
   .overlay-text {
     position: absolute;
