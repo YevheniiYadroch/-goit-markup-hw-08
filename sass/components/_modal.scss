@@ -167,6 +167,7 @@
 
 .label-policy {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 
   font-weight: 400;
@@ -239,6 +240,12 @@
     height: 30px;
 
     fill: currentColor;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .agreement {
+    margin-left: 23px;
   }
 }
 
