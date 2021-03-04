@@ -167,7 +167,6 @@ img {
     position: absolute;
     z-index: 1;
     width: 100%;
-    max-width: 480px;
     height: 100vh;
     top: 0;
     left: 50%;
@@ -603,10 +602,6 @@ img {
   }
 }
 
-.activities {
-  padding-top: 94px;
-}
-
 .activities .list {
   display: flex;
 }
@@ -704,6 +699,7 @@ img {
 .clients-links {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .clients-links .logo-1 {
